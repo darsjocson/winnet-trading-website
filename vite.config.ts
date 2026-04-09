@@ -8,20 +8,20 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
-      "@assets": path.resolve(__dirname, "attached_assets"),
+      "@assets": path.resolve(__dirname, "attached_assets")
     },
-    dedupe: ["react", "react-dom"],
+    dedupe: ["react", "react-dom"]
   },
   build: {
     outDir: "dist",
-    emptyOutDir: true,
+    emptyOutDir: true
   },
   server: {
     host: "0.0.0.0",
-    port: 5173,
+    port: 5173
   },
   preview: {
     host: "0.0.0.0",
-    port: 4173,
-  },
+    port: 4173
+  }
 });
